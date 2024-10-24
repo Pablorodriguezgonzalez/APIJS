@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Esta pagina contiene ejercicios de consumo de API con JS"
+    />
+    <meta name="keywords" content="html, javascript, API, Pablo Rodriguez" />
+    <meta name="author" content="Pablo Rodriguez" />
+    <meta name="robots" content="index, follow" />
+    <title>Conversor de Monedas Nacional</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css"
+    />
+  </head>
+  <body>
+    <h1>Conversor de monedas Nacional</h1>
+    <br />
+    <div id="container">
+      <div>
+        <label for="pesos">Pesos CLP</label>
+      </div>
+      <div>
+        <input type="number" id="pesos" placeholder="Ingresa monto en CLP" />
+      </div>
+      <div>
+        <label for="moneda">Moneda a convertir:</label>
+      </div>
+      <div>
+        <select id="moneda">
+          <option value="euro">Euro</option>
+          <option value="dolar">Dólar</option>
+        </select>
+      </div>
+      <button onclick="conversionMoneda()">Buscar</button>
+    </div>
+    <div id="resultado">Resultado: $0</div>
+    <canvas id="historia"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
